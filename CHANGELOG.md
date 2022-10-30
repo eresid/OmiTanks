@@ -1,12 +1,12 @@
 # CHANGELOG
 
-## 0.2 (xx.xx.2022)
+## 0.2 (30.10.2022)
 
 - [x] Static enemies
 - [x] Ability to shoot
 - [x] Explosion animation
 - [x] The color of the tank, player or enemy
-- [ ] Bullet hit animation
+- [x] Bullet hit animation
 
 ## 0.1 (30.10.2022)
 
