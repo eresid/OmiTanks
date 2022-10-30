@@ -81,3 +81,7 @@ func updateSprite(newDirection):
 	yield(get_tree().create_timer(0.3), "timeout")
 	isRotating = false
 	isMoving = true
+
+
+func _on_Area2D_area_entered(area):
+	pass # Replace with function body.

@@ -3,10 +3,9 @@
 ## 0.2 (xx.xx.2022)
 
 - [x] Static enemies
-- [ ] Ability to destroy a brick wall
 - [x] Ability to shoot
-- [ ] Explosion animation
-- [ ] The color of the tank, player or enemy
+- [x] Explosion animation
+- [x] The color of the tank, player or enemy
 - [ ] Bullet hit animation
 
 ## 0.1 (30.10.2022)
@@ -21,6 +20,9 @@
 - [x] Brick & Concrete walls
 
 # Next Releases
+
+- [ ] Ability to destroy a brick wall
+- [ ] Load level from JSON
 
 - [ ] Android Build
 - [ ] Mobile Controls
