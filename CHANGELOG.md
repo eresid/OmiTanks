@@ -1,25 +1,28 @@
-CHANGELOG
+# CHANGELOG
 
-## 0.1 (xx.xx.2022)
+## 0.2 (xx.xx.2022)
+
+- [ ] Ability to destroy a brick wall
+- [ ] Ability to shoot
+- [ ] Explosion animation
+
+## 0.1 (30.10.2022)
 
 - [x] Init Project & Git
 - [x] License, ReadMe & Changelog files
 - [x] Add gitignore file
 - [x] Game Icon
-- [ ] Empty game map
-- [ ] Player (move and rotate)
+- [x] Empty game map
+- [x] Player (move and rotate)
+- [x] Collision with objects
+- [x] Brick & Concrete walls
 
-## 0.2 (xx.xx.2022)
-
-- [ ] Brick & Concrete walls
-- [ ] Collision with objects
+# Next Releases
 
 ## 0.3 (xx.xx.2022)
 
-- [ ] Ability to shoot
-- [ ] Explosion animation
-- [ ] Ability to destroy a brick wall
 - [ ] Android Build
+- [ ] Mobile Controls
 
 ## 0.4 (xx.xx.2022)
 
