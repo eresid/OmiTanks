@@ -28,7 +28,7 @@ tracks/0/keys = {
 "values": [ 10, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
 }
 
-[node name="KinematicBody2D" type="KinematicBody2D"]
+[node name="Enemy" type="KinematicBody2D"]
 script = ExtResource( 3 )
 
 [node name="Sprite" type="Sprite" parent="."]

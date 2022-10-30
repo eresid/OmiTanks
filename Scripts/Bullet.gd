@@ -58,7 +58,7 @@ func shoot(point, _dir, isPlayer, _type) :
 		$Sprite.frame = bulletTypeData[_type].right
 
 func _on_BulletArea2D_area_entered(area):
-	if (area.name == 'EnemyArea2D'):
+	if (area.name == 'EnemyArea2D' || area.name == 'ObjectArea2D'):
 		wasCollided = true
 		
 		$Sprite.visible = false

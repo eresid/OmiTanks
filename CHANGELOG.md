@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 0.3 (xx.xx.2022)
+
+- [x] Ability to destroy a brick wall
+- [ ] Load level from JSON
+- [ ] Player Health points
+- [ ] Health points panel
+
 ## 0.2 (30.10.2022)
 
 - [x] Static enemies
@@ -7,6 +14,8 @@
 - [x] Explosion animation
 - [x] The color of the tank, player or enemy
 - [x] Bullet hit animation
+- [x] Enemy Health points
+- [x] Ability to destroy the enemy
 
 ## 0.1 (30.10.2022)
 
@@ -21,13 +30,8 @@
 
 # Next Releases
 
-- [ ] Ability to destroy a brick wall
-- [ ] Load level from JSON
-
 - [ ] Android Build
 - [ ] Mobile Controls
-- [ ] Health points
-- [ ] Ability to destroy the enemy
 - [ ] 3 Levels
 - [ ] Main Menu
 - [ ] Basic AI

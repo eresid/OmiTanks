@@ -14,6 +14,10 @@ config/name="OmiTanks"
 run/main_scene="res://Scenes/Game.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+FileHelper="*res://Scripts/FileHelper.gd"
+
 [display]
 
 window/size/width=720
