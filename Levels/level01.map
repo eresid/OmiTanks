@@ -1,4 +1,38 @@
 {
-"name":"Level 1",
-"description":"путін хуйло!"
+
+    "name":"Level 1",
+    "description":"путін хуйло!",
+    "objects":[
+        {
+            "type":"brickWall",
+            "posX":0,
+            "posY":0,
+            "healthPoints":4
+        },
+        {
+            "type":"brickWall",
+            "posX":1,
+            "posY":0,
+            "healthPoints":3
+        },
+        {
+            "type":"brickWall",
+            "posX":2,
+            "posY":0,
+            "healthPoints":4
+        },
+        {
+            "type":"brickWall",
+            "posX":3,
+            "posY":0,
+            "healthPoints":4
+        },
+        {
+            "type":"brickWall",
+            "posX":3,
+            "posY":1,
+            "healthPoints":4
+        }
+    ]
+
 }

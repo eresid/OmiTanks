@@ -1,13 +1,23 @@
 extends KinematicBody2D
 
-var type = "wall"
+const CELL_SIZE = 60
+
+var type = "brickWall"
 var healthPoints = 4
 
 func _ready():
+	pass
+
+func drawObject(item):
+	type = item.type
+	healthPoints = item.healthPoints
+	position.x = item.posX * CELL_SIZE
+	position.y = item.posY * CELL_SIZE
+		
 	updateSprite()
 
 func updateSprite():
-	if (type != "wall"):
+	if (type != "brickWall"):
 		return
 	
 	randomize()

@@ -1,8 +1,7 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Images/Tileset.png" type="Texture" id=1]
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Scenes/Object.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Scenes/Enemy.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Scripts/Game.gd" type="Script" id=5]
 
@@ -57,11 +56,4 @@ position = Vector2( 589, 171 )
 [node name="KinematicBody2D3" parent="." instance=ExtResource( 4 )]
 position = Vector2( 413, 585 )
 
-[node name="Object" parent="." instance=ExtResource( 3 )]
-position = Vector2( 483, 418 )
-
-[node name="Object2" parent="." instance=ExtResource( 3 )]
-position = Vector2( 58, 549 )
-
-[node name="Object3" parent="." instance=ExtResource( 3 )]
-position = Vector2( 56, 236 )
+[node name="Objects" type="Node2D" parent="."]
