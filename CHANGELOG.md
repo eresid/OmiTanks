@@ -2,9 +2,12 @@
 
 ## 0.2 (xx.xx.2022)
 
+- [x] Static enemies
 - [ ] Ability to destroy a brick wall
-- [ ] Ability to shoot
+- [x] Ability to shoot
 - [ ] Explosion animation
+- [ ] The color of the tank, player or enemy
+- [ ] Bullet hit animation
 
 ## 0.1 (30.10.2022)
 
@@ -19,22 +22,10 @@
 
 # Next Releases
 
-## 0.3 (xx.xx.2022)
-
 - [ ] Android Build
 - [ ] Mobile Controls
-
-## 0.4 (xx.xx.2022)
-
-- [ ] Static enemies
 - [ ] Health points
 - [ ] Ability to destroy the enemy
-
-## 0.5 (xx.xx.2022)
-
 - [ ] 3 Levels
 - [ ] Main Menu
-
-## 0.6 (xx.xx.2022)
-
 - [ ] Basic AI

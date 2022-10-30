@@ -7,4 +7,8 @@ A web and mobile game written on Godot. Everyone can join the development!
 
 ## Screens
 
+### v0.2
+![OmiTanks v0.2](Screens/v0.2.png)
+
+### v0.1
 ![OmiTanks v0.1](Screens/v0.1.png)
