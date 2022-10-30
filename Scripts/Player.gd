@@ -1,7 +1,6 @@
 extends KinematicBody2D
 
 var speed = 200
-var baseBulletSpeed = 400
 const CELL_SIZE = 60
 
 # need for direction limitation
@@ -45,9 +44,10 @@ func _process(delta):
 	var y = self.position.y
 	print(x,"-", y)
 	
-	if Input.is_action_just_pressed("ui_select"):
+	if Input.is_action_just_pressed("ui_select") && !isRotating:
 		var bul = Bullet.instance()
-		bul.shoot(get_position(), direction, true, baseBulletSpeed)
+		self.add_collision_exception_with(bul)
+		bul.shoot(get_position(), direction, true, 1)
 		$"../bulletList".add_child(bul)
 	
 	if (!isRotating):
