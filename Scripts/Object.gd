@@ -1,7 +1,5 @@
 extends KinematicBody2D
 
-const CELL_SIZE = 60
-
 var type = "brickWall"
 var healthPoints = 4
 
@@ -11,8 +9,8 @@ func _ready():
 func drawObject(item):
 	type = item.type
 	healthPoints = item.healthPoints
-	position.x = item.posX * CELL_SIZE
-	position.y = item.posY * CELL_SIZE
+	position.x = item.posX * Global.CELL_SIZE
+	position.y = item.posY * Global.CELL_SIZE
 		
 	updateSprite()
 

@@ -17,6 +17,7 @@ config/icon="res://icon.png"
 [autoload]
 
 FileHelper="*res://Scripts/FileHelper.gd"
+Global="*res://Scripts/Global.gd"
 
 [display]
 

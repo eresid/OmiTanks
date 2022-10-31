@@ -1,7 +1,6 @@
 extends KinematicBody2D
 
 var speed = 200
-const CELL_SIZE = 60
 
 # need for direction limitation
 var direction = "up"
@@ -42,7 +41,7 @@ func _process(delta):
 	
 	var x = self.position.x
 	var y = self.position.y
-	print(x,"-", y)
+	#print(x,"-", y)
 	
 	if Input.is_action_just_pressed("ui_select") && !isRotating:
 		var bul = Bullet.instance()
@@ -61,7 +60,7 @@ func needMoveForvard():
 	var x = self.position.x
 	var y = self.position.y
 	
-	if (fmod(x, CELL_SIZE) == 0 && fmod(y, CELL_SIZE) == 0):
+	if (fmod(x, Global.CELL_SIZE) == 0 && fmod(y, Global.CELL_SIZE) == 0):
 		return false
 		
 	return true
