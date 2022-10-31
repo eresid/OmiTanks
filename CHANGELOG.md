@@ -3,7 +3,10 @@
 ## 0.3 (xx.xx.2022)
 
 - [x] Ability to destroy a brick wall
-- [ ] Load level from JSON
+- [x] Load level from JSON
+- [x] Reworked explosion physics, fixed collision bug
+- [x] Explosion animation for objects
+- [ ] Grid Movement
 - [ ] Player Health points
 - [ ] Health points panel
 
@@ -30,6 +33,7 @@
 
 # Next Releases
 
+- [ ] Level editor
 - [ ] Android Build
 - [ ] Mobile Controls
 - [ ] 3 Levels

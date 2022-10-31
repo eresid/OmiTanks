@@ -7,7 +7,6 @@ var SPEED = 0
 var dir = ''
 var motion = Vector2()
 var isPlayerBullet = true
-var startPoint
 
 var wasCollided = false
 
@@ -33,7 +32,6 @@ func shoot(point, _dir, isPlayer, _type) :
 	SPEED = bulletTypeData[_type].speed
 	dir = _dir;
 	position = point
-	startPoint = point
 	isPlayerBullet = isPlayer
 	
 	var dist = 40
@@ -42,16 +40,16 @@ func shoot(point, _dir, isPlayer, _type) :
 		position.y -= dist
 		motion = Vector2(0, -1);
 		$Sprite.frame = bulletTypeData[_type].up
-	if dir == 'down' :
+	elif dir == 'down' :
 		position.y += dist
 		motion = Vector2(0, 1);
 		$Sprite.frame = bulletTypeData[_type].down
-	if dir == 'left' :
+	elif dir == 'left' :
 		position.x -= dist
 		position.y -= 4 # fix horizontal bullet position
 		motion = Vector2(-1, 0);
 		$Sprite.frame = bulletTypeData[_type].left
-	if dir == 'right' :
+	elif dir == 'right' :
 		position.x += dist
 		position.y -= 4 # fix horizontal bullet position
 		motion = Vector2(1, 0);

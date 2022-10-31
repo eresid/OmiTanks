@@ -1,5 +1,7 @@
 extends KinematicBody2D
 
+var ExplosionAnimation = preload("res://Scenes/ExplosionAnimation.tscn")
+
 var type = "brickWall"
 var healthPoints = 4
 
@@ -36,8 +38,10 @@ func _on_ObjectArea2D_area_entered(area):
 			updateSprite()
 			return
 
-		$Sprite.visible = false
-		# TODO animationPlayer.play("Explosion")
-		
-		yield(get_tree().create_timer(0.6), "timeout")
 		queue_free()
+		spawnExplosionAnimation()
+
+func spawnExplosionAnimation():
+	var explosionAnimation = ExplosionAnimation.instance()
+	explosionAnimation.play(Vector2(self.position.x - 15, self.position.y - 15))
+	$"../../DynamicObjects".add_child(explosionAnimation)

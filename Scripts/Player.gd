@@ -47,7 +47,7 @@ func _process(delta):
 		var bul = Bullet.instance()
 		self.add_collision_exception_with(bul)
 		bul.shoot(get_position(), direction, true, 1)
-		$"../bulletList".add_child(bul)
+		$"../DynamicObjects".add_child(bul)
 	
 	if (!isRotating):
 		move_and_slide(velocity)

@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-onready var animationPlayer = $Explosion/AnimationPlayer
+var ExplosionAnimation = preload("res://Scenes/ExplosionAnimation.tscn")
 
 var healthPoints = 3
 
@@ -14,10 +14,11 @@ func _on_Area2D_area_entered(area):
 		healthPoints -= 1
 		if (healthPoints > 0):
 			return
-
-		$Sprite.visible = false
-		$Ring.visible = false
-		animationPlayer.play("Explosion")
 		
-		yield(get_tree().create_timer(0.6), "timeout")
 		queue_free()
+		spawnExplosionAnimation()
+		
+func spawnExplosionAnimation():
+	var explosionAnimation = ExplosionAnimation.instance()
+	explosionAnimation.play(Vector2(self.position.x - 9, self.position.y - 9))
+	$"../DynamicObjects".add_child(explosionAnimation)
