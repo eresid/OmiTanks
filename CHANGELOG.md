@@ -6,6 +6,7 @@
 - [x] Load level from JSON
 - [x] Reworked explosion physics, fixed collision bug
 - [x] Explosion animation for objects
+- [x] Main Menu
 - [ ] Grid Movement
 - [ ] Player Health points
 - [ ] Health points panel
@@ -37,5 +38,4 @@
 - [ ] Android Build
 - [ ] Mobile Controls
 - [ ] 3 Levels
-- [ ] Main Menu
 - [ ] Basic AI
