@@ -1,15 +1,15 @@
 # CHANGELOG
 
-## 0.3 (xx.xx.2022)
+## 0.3 (06.11.2022)
 
 - [x] Ability to destroy a brick wall
 - [x] Load level from JSON
 - [x] Reworked explosion physics, fixed collision bug
 - [x] Explosion animation for objects
 - [x] Main Menu
-- [ ] Grid Movement
-- [ ] Player Health points
-- [ ] Health points panel
+- [x] Level editor: List of levels
+- [x] Level editor: Edit file name, level name & description
+- [x] Level editor: Deleting level
 
 ## 0.2 (30.10.2022)
 
@@ -34,7 +34,9 @@
 
 # Next Releases
 
-- [ ] Level editor
+- [ ] Grid Movement
+- [ ] Player Health points
+- [ ] Health points panel
 - [ ] Android Build
 - [ ] Mobile Controls
 - [ ] 3 Levels
