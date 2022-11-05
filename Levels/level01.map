@@ -1,7 +1,9 @@
 {
-
+    "editorVersion":0.1,
     "name":"Level 1",
-    "description":"путін хуйло!",
+    "description":"putin huilo!",
+    "height":10,
+    "width":12,
     "objects":[
         {
             "type":"brickWall",

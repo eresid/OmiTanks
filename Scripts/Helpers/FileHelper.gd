@@ -1,5 +1,7 @@
 extends Node
 
+const LEVEL_EDITOR_VERSION = 0.1
+
 func loadLevel(levelName):
 	var file = File.new()
 	file.open("res://Levels/%s" % levelName, File.READ)
@@ -8,6 +10,9 @@ func loadLevel(levelName):
 	return JSON.parse(levelAsString).result
 
 func saveLevel(levelName, level):
+	# Saving level editor version for compatibility check
+	level.editorVersion = LEVEL_EDITOR_VERSION
+	
 	var saveLevelFile = File.new()
 	saveLevelFile.open("res://Levels/%s" % levelName, File.WRITE)
 	saveLevelFile.store_string(to_json(level))

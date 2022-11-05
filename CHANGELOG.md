@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 0.4 (xx.xx.2022)
+
+- [ ] Dynamic Map size
+- [x] Level editor: Map size
+- [ ] Level editor: Objects
+- [ ] Level editor: Enemies
+
 ## 0.3 (06.11.2022)
 
 - [x] Ability to destroy a brick wall
