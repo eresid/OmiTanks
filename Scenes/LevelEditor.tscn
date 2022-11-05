@@ -1,0 +1,112 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/LevelEditor.gd" type="Script" id=1]
+
+[node name="LevelEditor" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="TabContainer" type="TabContainer" parent="."]
+margin_right = 700.0
+margin_bottom = 700.0
+
+[node name="General" type="Tabs" parent="TabContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 32.0
+margin_right = -4.0
+margin_bottom = -4.0
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="FileNameLabel" type="Label" parent="TabContainer/General"]
+margin_left = 20.0
+margin_top = 15.0
+margin_right = 85.0
+margin_bottom = 29.0
+text = "File Name"
+
+[node name="FileNameLineEdit" type="LineEdit" parent="TabContainer/General"]
+margin_left = 119.0
+margin_top = 7.0
+margin_right = 676.0
+margin_bottom = 36.0
+hint_tooltip = "Enter file name"
+
+[node name="MapNameLabel" type="Label" parent="TabContainer/General"]
+margin_left = 16.0
+margin_top = 51.0
+margin_right = 85.0
+margin_bottom = 65.0
+rect_pivot_offset = Vector2( 69, 14 )
+text = "Name"
+
+[node name="MapNameLineEdit" type="LineEdit" parent="TabContainer/General"]
+margin_left = 120.0
+margin_top = 49.0
+margin_right = 674.0
+margin_bottom = 73.0
+__meta__ = {
+"_editor_description_": "Enter map name"
+}
+
+[node name="MapDescriptionLabel" type="Label" parent="TabContainer/General"]
+margin_left = 19.0
+margin_top = 94.0
+margin_right = 93.0
+margin_bottom = 108.0
+text = "Description"
+
+[node name="MapDescriptionTextEdit" type="TextEdit" parent="TabContainer/General"]
+margin_left = 119.0
+margin_top = 90.0
+margin_right = 678.0
+margin_bottom = 244.0
+hint_tooltip = "Enter map description"
+
+[node name="SaveButton" type="Button" parent="TabContainer/General"]
+margin_left = 21.0
+margin_top = 298.0
+margin_right = 120.0
+margin_bottom = 318.0
+text = "Save"
+
+[node name="DeleteButton" type="Button" parent="TabContainer/General"]
+margin_left = 138.0
+margin_top = 298.0
+margin_right = 224.0
+margin_bottom = 318.0
+text = "Delete Map"
+
+[node name="Objects" type="Tabs" parent="TabContainer"]
+visible = false
+margin_right = 40.0
+margin_bottom = 24.0
+
+[node name="Enemies" type="Tabs" parent="TabContainer"]
+visible = false
+margin_right = 40.0
+margin_bottom = 24.0
+
+[node name="ConfirmationDialog" type="ConfirmationDialog" parent="."]
+visible = true
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -100.0
+margin_top = -35.0
+margin_right = 100.0
+margin_bottom = 35.0
+window_title = "Map Deleting"
+dialog_text = "You are sure you want to delete this map?"
+
+[connection signal="text_changed" from="TabContainer/General/FileNameLineEdit" to="." method="_on_FileNameLineEdit_text_changed"]
+[connection signal="text_changed" from="TabContainer/General/MapNameLineEdit" to="." method="_on_MapNameLineEdit_text_changed"]
+[connection signal="text_changed" from="TabContainer/General/MapDescriptionTextEdit" to="." method="_on_MapDescriptionTextEdit_text_changed"]
+[connection signal="pressed" from="TabContainer/General/SaveButton" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="TabContainer/General/DeleteButton" to="." method="_on_DeleteButton_pressed"]
+[connection signal="confirmed" from="ConfirmationDialog" to="." method="_on_ConfirmationDialog_confirmed"]

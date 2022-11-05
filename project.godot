@@ -16,8 +16,9 @@ config/icon="res://icon.png"
 
 [autoload]
 
-FileHelper="*res://Scripts/FileHelper.gd"
-Global="*res://Scripts/Global.gd"
+FileHelper="*res://Scripts/Helpers/FileHelper.gd"
+Global="*res://Scripts/Helpers/Global.gd"
+LevelObject="*res://Scripts/Helpers/LevelObject.gd"
 
 [display]
 

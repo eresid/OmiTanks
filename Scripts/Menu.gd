@@ -6,5 +6,8 @@ func _ready():
 func _on_PlayButton_pressed():
 	get_tree().change_scene("res://Scenes/Game.tscn")
 
+func _on_LevelEditorButton_pressed():
+	get_tree().change_scene("res://Scenes/LevelsList.tscn")
+
 func _on_ExitButton_pressed():
 	get_tree().quit()

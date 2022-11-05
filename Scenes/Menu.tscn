@@ -21,11 +21,18 @@ margin_right = 150.0
 margin_bottom = 20.0
 text = "Play"
 
-[node name="ExitButton" type="Button" parent="VBoxContainer"]
-margin_top = 32.0
+[node name="LevelEditorButton" type="Button" parent="VBoxContainer"]
+margin_top = 24.0
 margin_right = 150.0
 margin_bottom = 44.0
+text = "Level Editor"
+
+[node name="ExitButton" type="Button" parent="VBoxContainer"]
+margin_top = 48.0
+margin_right = 150.0
+margin_bottom = 68.0
 text = "Exit"
 
 [connection signal="pressed" from="VBoxContainer/PlayButton" to="." method="_on_PlayButton_pressed"]
+[connection signal="pressed" from="VBoxContainer/LevelEditorButton" to="." method="_on_LevelEditorButton_pressed"]
 [connection signal="pressed" from="VBoxContainer/ExitButton" to="." method="_on_ExitButton_pressed"]

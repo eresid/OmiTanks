@@ -1,17 +1,21 @@
 extends Node
 
-func loadLevel(mapName):
+func loadLevel(levelName):
 	var file = File.new()
-	file.open("res://Levels/%s" % mapName, File.READ)
-	var mapAsString = file.get_as_text()
+	file.open("res://Levels/%s" % levelName, File.READ)
+	var levelAsString = file.get_as_text()
 	file.close()
-	return JSON.parse(mapAsString).result
+	return JSON.parse(levelAsString).result
 
-func saveLevel(mapName, level):
+func saveLevel(levelName, level):
 	var saveLevelFile = File.new()
-	saveLevelFile.open("res://Levels/%s" % mapName, File.WRITE)
+	saveLevelFile.open("res://Levels/%s" % levelName, File.WRITE)
 	saveLevelFile.store_string(to_json(level))
 	saveLevelFile.close()
+
+func deleteLevel(levelName):
+	var dir = Directory.new()
+	dir.remove("res://Levels/%s" % levelName)
 
 func listOfFilesFromDirectory(path):
 	var files = []
